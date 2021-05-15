@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attrape Moi</title>
+</head>
+<body>
+    <h1 class="titre">Attrape Moi</h1>
+    <div id="start">
+        <button class="play" onclick="start()">JOUER</button>
+    </div>
+    <div class="loose" hidden>
+        <h2>GameOver</h1>
+    </div>
+    <canvas id="canvas1"></canvas>
+    <div class="Settings">
+        <label>Vitesse</label>
+        <input id="Speed" type="number" min="1" max="20" step="5" value="0">
+        <label>Taille</label>
+        <input id="Size" type="number" min="1" max="4" step="0.5" value="2">
+        <label>Selection</label>
+        <button onclick="animals()">Chat et Chien</button>
+        <button onclick="stars_wars()">Luke et DarkVador</button>
+        <button onclick="death_note()">L et Ryuk</button>
+    </div>
+    <p>©CASCIO Joseph 2021</p>
+    <script src="js/script.js"></script>
+</body>
+</html>
